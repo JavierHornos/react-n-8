@@ -10,7 +10,7 @@ function Home() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>Digital Drinks!!!</h3>
+          <h3>Digital Drinks</h3>
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -22,7 +22,7 @@ function Home() {
         />
 
         <Carousel.Caption>
-          <h3>Digital Drinks!!!</h3>
+          <h3>Digital Drinks</h3>
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -34,7 +34,7 @@ function Home() {
         />
 
         <Carousel.Caption>
-          <h3>Digital Drinks!!!</h3>
+          <h3>Digital Drinks</h3>
           <p></p>
         </Carousel.Caption>
       </Carousel.Item>
