@@ -32,6 +32,10 @@ const Sidebar = () => {
                     <NavLink to="/CantUser" className='text-dark me-2'><FaUserFriends/> Cant de Usuarios</NavLink>
                 </li>
 
+                <li>
+                    <NavLink to="/CantCategorias" className='text-dark me-2'><FaUserFriends/> Cant de Categorias</NavLink>
+                </li>
+
                 
 
             </ul>

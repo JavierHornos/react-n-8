@@ -7,6 +7,8 @@ import Productos from "./Pages/Productos";
 import CantProd from "./Pages/CantProd";
 import Usuarios from "./Pages/Usuarios";
 import CantUser from "./Pages/CantUser";
+import Categorias from "./Pages/Categorias";
+import CantCategorias from "./Pages/CantCategorias";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path="/cantProd" exact={true} element={<CantProd/>} />
           <Route path="/Usuarios" exact={true} element={<Usuarios/>} />
           <Route path="/cantUser" exact={true} element={<CantUser/>} />
+          <Route path="/Categorias" exact={true} element={<Categorias/>} />
+          <Route path="/cantCategorias" exact={true} element={<CantCategorias/>} />
           </Routes>
         </div>
         
