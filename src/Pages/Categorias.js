@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 
 const Categorias = () => {
-    const [ users, setUsers ] = useState([])
+    const [ categorias, setUsers ] = useState([])
     
     
     
@@ -30,13 +30,13 @@ const Categorias = () => {
 
 
             <tbody className="text-center" >
-                { users.map( (user) => ( 
+                { categorias.map( (categoria) => ( 
                 
-                <tr key={user.Id}>
+                <tr key={categoria.Id}>
 
-                    <td >{user.Nombre}</td>
-                    <td ><img className='foto' src={user.Imagen} alt={user.Nombre}/></td>
-                    <td>{console.log(user.Imagen)}</td>
+                    <td >{categoria.Nombre}</td>
+                    <td ><img className='foto' src={categoria.Imagen} alt={categoria.Nombre}/></td>
+                    <td>{console.log(categoria.Imagen)}</td>
                     
                     
                 </tr>
