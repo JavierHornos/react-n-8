@@ -38,7 +38,6 @@ const Categorias = () => {
                     <td >{cate.nombre}</td>
                     
                     
-                    
                 </tr>
                 
              ))}
