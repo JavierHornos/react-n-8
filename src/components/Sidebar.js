@@ -3,6 +3,9 @@ import { FaHome } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
 import { FaProductHunt } from "react-icons/fa";
 import { FaPiedPiperPp } from "react-icons/fa";
+import { FaContao } from "react-icons/fa";
+
+
 
 
 
@@ -33,11 +36,11 @@ const Sidebar = () => {
                 </li>
 
                 <li>
-                    <NavLink to="/Categorias" className='text-dark me-2'><FaUserFriends/> Categorias</NavLink>
+                    <NavLink to="/Categorias" className='text-dark me-2'><FaContao/> Categorias</NavLink>
                 </li>
 
                 <li>
-                    <NavLink to="/CantCategorias" className='text-dark me-2'><FaUserFriends/> Cant de Categorias</NavLink>
+                    <NavLink to="/CantCategorias" className='text-dark me-2'><FaContao/> Cant de Categorias</NavLink>
                 </li>
 
                 

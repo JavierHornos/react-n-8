@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 
 const Categorias = () => {
-    const [ categorias, setUsers ] = useState([])
+    const [ categorias, setCategorias ] = useState([])
     
     
     
@@ -10,8 +10,8 @@ const Categorias = () => {
     const showData = async () => {
         const response = await fetch(URL, {mode:'cors'})
         const data = await response.json()
-        console.log(data)
-        setUsers(data.data)
+        // console.log(data)
+        setCategorias(data.data)
     }
 
     useEffect ( () => {
@@ -23,8 +23,8 @@ const Categorias = () => {
            <table className='table table-striped table-hover mt-4 shadow-lg'>
             <thead>
                 <tr className='bg-danger text-white text-center'>
+                    <th>Id</th>
                     <th>Nombre</th>
-                    <th>Imagen</th>
                 </tr>
             </thead>
 
@@ -32,11 +32,11 @@ const Categorias = () => {
             <tbody className="text-center" >
                 { categorias.map( (cate) => ( 
                 
-                <tr key={cate.Id}>
+                <tr key={cate.id}>
 
-                    <td >{cate.Nombre}</td>
-                    <td ><img className='foto' src={cate.Imagen} alt={cate.Nombre}/></td>
-                    <td>{console.log(cate.Imagen)}</td>
+                    <td >{cate.id}</td>
+                    <td >{cate.nombre}</td>
+                    
                     
                     
                 </tr>

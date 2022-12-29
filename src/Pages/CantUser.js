@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from "react";
 
-function BodyOnlyExample() {
+function CantUsuarios() {
 
 
   const [productos, setProductos] = useState([]);
@@ -25,4 +25,4 @@ function BodyOnlyExample() {
   );
 }
 
-export default BodyOnlyExample;
+export default CantUsuarios;
