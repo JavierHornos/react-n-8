@@ -21,7 +21,7 @@ function ListaProductos() {
   return (
     <div className="container" >
       {
-        Cargando ? <h1>Cargando </h1> :   // condicional ternario , si Cargando es false, mostrar h1 Cargando, caso contrario el resto de codigo
+        Cargando ? <h1>Cargando...</h1> :   // condicional ternario , si Cargando es false, mostrar h1 Cargando, caso contrario el resto de codigo
         
         <div className="row" >
         {productos.map((producto) => {
