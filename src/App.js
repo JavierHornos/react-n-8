@@ -31,7 +31,7 @@ function App() {
           <Route path="/cantProd" exact={true} element={<CantProd/>} />
           <Route path="/Usuarios" exact={true} element={<Usuarios/>} />
           <Route path="/cantUser" exact={true} element={<CantUser/>} />
-          <Route path="/Categorias" exact={true} element={<Categorias/>} />
+          <Route path="/categorias" exact={true} element={<Categorias/>} />
           <Route path="/cantCategorias" exact={true} element={<CantCategorias/>} />
           </Routes>
         </div>

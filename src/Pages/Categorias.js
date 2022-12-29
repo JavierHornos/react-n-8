@@ -30,13 +30,13 @@ const Categorias = () => {
 
 
             <tbody className="text-center" >
-                { categorias.map( (categoria) => ( 
+                { categorias.map( (cate) => ( 
                 
-                <tr key={categoria.Id}>
+                <tr key={cate.Id}>
 
-                    <td >{categoria.Nombre}</td>
-                    <td ><img className='foto' src={categoria.Imagen} alt={categoria.Nombre}/></td>
-                    <td>{console.log(categoria.Imagen)}</td>
+                    <td >{cate.Nombre}</td>
+                    <td ><img className='foto' src={cate.Imagen} alt={cate.Nombre}/></td>
+                    <td>{console.log(cate.Imagen)}</td>
                     
                     
                 </tr>
