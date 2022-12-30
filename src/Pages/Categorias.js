@@ -25,6 +25,7 @@ const Categorias = () => {
                 <tr className='bg-danger text-white text-center'>
                     <th>Id</th>
                     <th>Nombre</th>
+                    <th>Cantidad</th>
                 </tr>
             </thead>
 
@@ -36,6 +37,7 @@ const Categorias = () => {
 
                     <td >{cate.id}</td>
                     <td >{cate.nombre}</td>
+                    <td >{cate.cantidad}</td>
                     
                     
                     
