@@ -1,10 +1,9 @@
 //import Carousel from 'react-bootstrap/Carousel';
-import Card from 'react-bootstrap/Card';
-import { useEffect, useState } from "react";
 import CantProd from './CantProd'
 import CantUser from './CantUser'
 import CantCategorias from './CantCategorias'
-import Categorias from './Categorias'
+import Categoriasa from './categoriashome'
+import './home.scss'
 
 
 //function Home() {
@@ -65,46 +64,52 @@ function Home() {
         {/* Content Row */}
         <div className="row">
           {/* Amount of Products in DB */}
-          <div className="col-md-4 mb-4">
-
-
-
-
-
-            <div className="h5 mb-0 font-weight-bold text-gray-800">
-              <CantProd />
-            </div>
-
-            <div className="col-auto">
-              <i className="fas fa-clipboard-list fa-2x text-gray-300" />
-            </div>
-
-
-
-          </div>
+          <div class="col-md-4 mb-4">
+							<div class="card border-left-primary shadow h-100 py-2">
+								<div class="card-body">
+									<div class="row no-gutters align-items-center">
+										<div class="col mr-2">
+											<div class="h5 mb-0 font-weight-bold text-gray-800">
+              <CantProd /> </div>
+										</div>
+										<div class="col-auto">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
           {/* $$$ of all products in DB */}
-          <div className="col-md-4 mb-4">
-
-            <div className="h5 mb-0 font-weight-bold text-gray-800">
-              <CantCategorias />
-            </div>
-          </div>
-          <div className="col-auto">
-            <i className="fas fa-dollar-sign fa-2x text-gray-300" />
-          </div>
-
+          <div class="col-md-4 mb-4">
+							<div class="card border-left-success shadow h-100 py-2">
+								<div class="card-body">
+									<div class="row no-gutters align-items-center">
+										<div class="col mr-2">
+											<div class="h5 mb-0 font-weight-bold text-gray-800"><CantCategorias /></div>
+										</div>
+										<div class="col-auto">
+											<i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
           {/* Amount of users in DB */}
-          <div className="col-md-4 mb-4">
+          <div class="col-md-4 mb-4">
+							<div class="card border-left-warning shadow h-100 py-2">
+								<div class="card-body">
+									<div class="row no-gutters align-items-center">
+										<div class="col mr-2">
+											<div class="h5 mb-0 font-weight-bold text-gray-800"><CantUser /></div>
+										</div>
+										<div class="col-auto">
+											<i class="fas fa-user-check fa-2x text-gray-300"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-            <div className="h5 mb-0 font-weight-bold text-gray-800">
-              <CantUser />
-            </div>
-          </div>
-          <div className="col-auto">
-            <i className="fas fa-user-check fa-2x text-gray-300" />
-          </div>
-
-        </div>
         {/* Content Row */}
         <div className="row">
           {/* Last Product in DB */}
@@ -133,7 +138,7 @@ function Home() {
                   <div className="col-lg-6 mb-4">
                     <div className="card bg-info text-white shadow">
                       <div className="card-body">
-                        <Categorias />
+                        <Categoriasa const categorias = {1} />
                       </div>
 
                     </div>

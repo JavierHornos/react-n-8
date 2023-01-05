@@ -1,5 +1,6 @@
-import Card from 'react-bootstrap/Card';
+//import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from "react";
+import { FaWpforms } from 'react-icons/fa';
 
 function BodyOnlyExample() {
 
@@ -17,10 +18,12 @@ function BodyOnlyExample() {
   }, []);
 
   return (
-    <Card>
-      <Card.Body><h3>Cantidad de Categorias</h3></Card.Body>
-      <Card.Body className='text-center'><h4>{productos}</h4></Card.Body>
-    </Card>
+    <div>
+    <div class="text-xs font-weight-bold text-success text-uppercase mb-1"> Cantidad de Categorias <div className= 'icon'><FaWpforms /></div>
+      
+    </div>
+    <h4>{productos}</h4>
+    </div>
     
   );
 }

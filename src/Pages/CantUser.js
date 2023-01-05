@@ -1,6 +1,7 @@
-import Card from 'react-bootstrap/Card';
+//import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from "react";
-
+import './home.scss'
+import { BsEmojiSmile } from 'react-icons/bs';
 function CantUsuarios() {
 
 
@@ -17,10 +18,11 @@ function CantUsuarios() {
   }, []);
 
   return (
-    <Card>
-      <Card.Body><h3>Cantidad de Usuarios</h3></Card.Body>
-      <Card.Body className='text-center'><h4>{productos}</h4></Card.Body>
-    </Card>
+    <div>
+    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"> Cantidad de Usuarios <div className="icon"><BsEmojiSmile/></div></div>
+    <h4>{productos}</h4>
+    </div>
+
     
   );
 }

@@ -1,6 +1,5 @@
-import Card from 'react-bootstrap/Card';
 import { useEffect, useState } from "react";
-
+import { IoMdBeer } from 'react-icons/io';
 function CantProductos() {
 
 
@@ -17,11 +16,12 @@ function CantProductos() {
   }, []);
 
   return (
-    <Card>
-      <Card.Body><h3>Cantidad de Productos</h3></Card.Body>
-      <Card.Body className='text-center'><h4>{productos}</h4></Card.Body>
-    </Card>
-    
+    <div>
+    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Cantidad de Productos <div className= 'icon'><IoMdBeer /> </div>
+      
+    </div>
+    <h4>{productos}</h4>
+    </div>
   );
 }
 

@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 
-
-const Categorias = () => {
+const Categoriasa = () => {
     const [ categorias, setCategorias ] = useState([])
     
     
@@ -68,34 +67,20 @@ const Categorias = () => {
     
     return (
         <div className='container-fluid caja-padre' >
-           <table className='table table-striped table-hover mt-4 shadow-lg'>
-            <thead>
-                <tr className='bg-danger text-white text-center'>
-                    <th>Id</th>
-                    <th>Nombre</th>
-                    <th>Cantidad</th>
-                </tr>
-            </thead>
 
 
             <tbody className="text-center" >
                 { categorias.map( (cate) => ( 
                 
-                <tr key={cate.id}>
-
-                    <td >{cate.id}</td>
-                    <td >{cate.nombre}</td>
-                    <td >{cate.cant}</td>
-                    
-                    
-                    
+                <tr key={cate.nombre}>
+                    <td >{cate.nombre}</td> 
                 </tr>
                 
              ))}
             </tbody>
-
-           </table>
         </div>
     )
 }
- export default Categorias;
+
+
+export default Categoriasa
