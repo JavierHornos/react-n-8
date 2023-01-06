@@ -19,7 +19,7 @@ function CantUsuarios() {
 
   return (
     <div>
-    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1"> Cantidad de Usuarios <div className="icon"><BsEmojiSmile/></div></div>
+    <div className="text-xs font-weight-bold text-warning text-uppercase mb-1"> Cantidad de Usuarios <div className="icon"><BsEmojiSmile/></div></div>
     <h4>{productos}</h4>
     </div>
 

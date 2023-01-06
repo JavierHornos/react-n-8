@@ -4,7 +4,8 @@ import CantUser from './CantUser'
 import CantCategorias from './CantCategorias'
 import CateHome from './CateHome'
 import './home.scss'
-
+import UltimoProducto from './UltimoProducto'
+import UltimoUsuario from './UltimoUsuario'
 
 //function Home() {
 //return (
@@ -64,45 +65,45 @@ function Home() {
         {/* Content Row */}
         <div className="row">
           {/* Amount of Products in DB */}
-          <div class="col-md-4 mb-4">
-							<div class="card border-left-primary shadow h-100 py-2">
-								<div class="card-body">
-									<div class="row no-gutters align-items-center">
-										<div class="col mr-2">
-											<div class="h5 mb-0 font-weight-bold text-gray-800">
+          <div className="col-md-4 mb-4">
+							<div className="card border-left-primary shadow h-100 py-2">
+								<div className="card-body">
+									<div className="row no-gutters align-items-center">
+										<div className="col mr-2">
+											<div className="h5 mb-0 font-weight-bold text-gray-800">
               <CantProd /> </div>
 										</div>
-										<div class="col-auto">
+										<div className="col-auto">
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
           {/* $$$ of all products in DB */}
-          <div class="col-md-4 mb-4">
-							<div class="card border-left-success shadow h-100 py-2">
-								<div class="card-body">
-									<div class="row no-gutters align-items-center">
-										<div class="col mr-2">
-											<div class="h5 mb-0 font-weight-bold text-gray-800"><CantCategorias /></div>
+          <div className="col-md-4 mb-4">
+							<div className="card border-left-success shadow h-100 py-2">
+								<div className="card-body">
+									<div className="row no-gutters align-items-center">
+										<div className="col mr-2">
+											<div className="h5 mb-0 font-weight-bold text-gray-800"><CantCategorias /></div>
 										</div>
-										<div class="col-auto">
-											<i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+										<div className="col-auto">
+											<i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
           {/* Amount of users in DB */}
-          <div class="col-md-4 mb-4">
-							<div class="card border-left-warning shadow h-100 py-2">
-								<div class="card-body">
-									<div class="row no-gutters align-items-center">
-										<div class="col mr-2">
-											<div class="h5 mb-0 font-weight-bold text-gray-800"><CantUser /></div>
+          <div className="col-md-4 mb-4">
+							<div className="card border-left-warning shadow h-100 py-2">
+								<div className="card-body">
+									<div className="row no-gutters align-items-center">
+										<div className="col mr-2">
+											<div className="h5 mb-0 font-weight-bold text-gray-800"><CantUser /></div>
 										</div>
-										<div class="col-auto">
-											<i class="fas fa-user-check fa-2x text-gray-300"></i>
+										<div className="col-auto">
+											<i className="fas fa-user-check fa-2x text-gray-300"></i>
 										</div>
 									</div>
 								</div>
@@ -110,23 +111,48 @@ function Home() {
 						</div>
 					</div>
 
+          
+
+          
+
         {/* Content Row */}
         <div className="row">
           {/* Last Product in DB */}
           <div className="col-lg-6 mb-4">
             <div className="card shadow mb-4">
               <div className="card-header py-3">
-                <h6 className="m-0 font-weight-bold text-primary">Last product in Data Dase</h6>
+                <h6 className="m-0 font-weight-bold text-primary">Ultimo Producto en Base de Datos</h6>
               </div>
-              <div className="card-body">
-                <div className="text-center">
-                  <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: '25rem' }} src="assets/images/product_dummy.svg" alt="image dummy" />
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
-                <a target="_blank" rel="nofollow" href="/">View product detail</a>
+              <div>
+                <UltimoProducto />
               </div>
+
             </div>
           </div>
+
+
+          
+
+
+          {/* Last Product in DB */}
+          <div className="col-lg-6 mb-4">
+            <div className="card shadow mb-4">
+              <div className="card-header py-3">
+                <h6 className="m-0 font-weight-bold text-primary">Ultimo Usuario en Base de Datos</h6>
+              </div>
+
+              <div>
+                <UltimoUsuario />
+              </div>
+
+
+              
+            </div>
+          </div>
+
+
+
+
           {/* Categories in DB */}
           <div className="col-lg-6 mb-4">
             <div className="card shadow mb-4">
@@ -141,6 +167,16 @@ function Home() {
              
             </div>
           </div>
+
+
+          
+           
+          
+
+          
+    
+
+
         </div>
       </div>
       {/* /.container-fluid */}

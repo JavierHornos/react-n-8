@@ -19,7 +19,7 @@ function BodyOnlyExample() {
 
   return (
     <div>
-    <div class="text-xs font-weight-bold text-success text-uppercase mb-1"> Cantidad de Categorias <div className= 'icon'><FaWpforms /></div>
+    <div className="text-xs font-weight-bold text-success text-uppercase mb-1"> Cantidad de Categorias <div className= 'icon'><FaWpforms /></div>
       
     </div>
     <h4>{productos}</h4>

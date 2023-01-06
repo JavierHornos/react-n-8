@@ -25,13 +25,13 @@ const CateHome = () => {
             <div className="row" >
                 { categorias.map( (cate) => ( 
                 
-                <div className="card-body">
+                <div className="card-body" key={cate.id} >
                 <div className="row">
                   <div className="col-lg-6 mb-4">
                     <div className="card bg-info text-white shadow">
-                      <div className="card-body">
-                        
-                            <div key={cate.id}>
+                      <div className="card-body" >
+                         
+                            
                       			<div >{cate.nombre}</div> 
                      		</div>
 
@@ -40,7 +40,7 @@ const CateHome = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+            
                 
              ))}
             </div>

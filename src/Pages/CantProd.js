@@ -17,7 +17,7 @@ function CantProductos() {
 
   return (
     <div>
-    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Cantidad de Productos <div className= 'icon'><IoMdBeer /> </div>
+    <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">Cantidad de Productos <div className= 'icon'><IoMdBeer /> </div>
       
     </div>
     <h4>{productos}</h4>
