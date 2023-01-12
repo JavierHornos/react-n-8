@@ -7,7 +7,7 @@ const UltimoUsuario = () => {
     
     
     
-    const URL = 'https://digitaldrinks.onrender.com/api/users' 
+    const URL = 'https://digitaldrinks.onrender.com/api/users/ultimo' 
     const showData = async () => {
         const response = await fetch(URL, {mode:'cors'})
         const data = await response.json()

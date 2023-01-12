@@ -7,12 +7,12 @@ const UltimoProducto = () => {
     
     
     
-    const URL = 'https://digitaldrinks.onrender.com/api/products' 
+    const URL = 'https://digitaldrinks.onrender.com/api/products/ultima' 
     const showData = async () => {
         const response = await fetch(URL, {mode:'cors'})
         const data = await response.json()
         // console.log(data)
-        setProductos(data.ultimo)
+        setProductos(data.ultima)
     }
 
     useEffect ( () => {
