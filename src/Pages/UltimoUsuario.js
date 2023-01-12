@@ -7,7 +7,7 @@ const UltimoUsuario = () => {
     
     
     
-    const URL = 'https://digitaldrinks.onrender.com/api/users' 
+    const URL = 'https://digitaldrinks.onrender.com/api/users/ultimo' 
     const showData = async () => {
         const response = await fetch(URL, {mode:'cors'})
         const data = await response.json()
@@ -32,7 +32,6 @@ const UltimoUsuario = () => {
                   <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: '15rem' }} src={Usuario.Imagen} alt={Usuario.Nombre} />
                 </div>
                 <p> {Usuario.Email}{}</p>
-                <a target="_blank" rel="nofollow" href="/">View product detail</a>
               </div>
               </div>  
              

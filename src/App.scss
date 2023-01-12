@@ -14,17 +14,26 @@ body {
 
 $ligth: #ffffff;
 $gray: #c4ccde;
+$naranja: orangered;
 
 .Navbar {  
-    background-color:  $ligth;
+    background-color:  black;
     padding: 1rem 2rem;
-    border-bottom: 1px solid $gray;
+    border-bottom: 5px solid $naranja;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 250px;
+    height: 70px;
 }
 
 .Sidebar {
     width: 14rem;
-    height: calc(100vh - 52px);
-    border-right: 1px solid $gray ;
+    border-right: 2px solid $naranja ;
+    background-color: black;
     ul {
       list-style: none;  
       padding: 1rem 2rem;
